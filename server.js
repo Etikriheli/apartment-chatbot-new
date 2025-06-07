@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // הגשת קבצים סטטיים
-app.use(express.static('.'));
+app.use(express.static(__dirname));
 
 // נתיב לדף הבית
 app.get('/', (req, res) => {
