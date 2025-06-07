@@ -1,7 +1,7 @@
 // הגדרות עם ה-Supabase הנכון שלך
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_KEY = 'YOUR_SUPABASE_KEY';
-const API_KEY = 'YOUR_OPENAI_API_KEY';
+const SUPABASE_URL = process.env.SUPABASE_URL || 'YOUR_SUPABASE_URL';
+const SUPABASE_KEY = process.env.SUPABASE_KEY || 'YOUR_SUPABASE_KEY';
+const API_KEY = process.env.API_KEY || 'YOUR_OPENAI_API_KEY';
 
 let chatCount = 0;
 let totalCost = 0;
