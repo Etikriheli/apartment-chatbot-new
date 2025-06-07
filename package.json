@@ -1,0 +1,12 @@
+{
+  "name": "chatbot-apartments",
+  "version": "1.0.0",
+  "description": "Chatbot for apartment search",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

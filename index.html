@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צ'אטבוט חיפוש דירות</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏠 יוסי - הסוכן החכם שלך</h1>
+            <div class="status" id="status">🤖 GPT-4o mini מחובר ✅</div>
+        </div>
+        
+        <div class="messages" id="messages"></div>
+        
+        <div class="usage" id="usage">שיחות: 0 | עלות: $0.00</div>
+        
+        <div class="input-area">
+            <div class="quick-btns">
+                <button class="quick-btn" onclick="setInput('היי יוסי! אני מחפש דירה')">👋 היי יוסי!</button>
+                <button class="quick-btn" onclick="setInput('אני צריך דירה חדשה')">🏠 צריך דירה</button>
+                <button class="quick-btn" onclick="setInput('אני רוצה לעבור דירה')">📦 רוצה לעבור</button>
+                <button class="quick-btn" onclick="setInput('מחפש דירה להשכרה')">🔍 דירה להשכרה</button>
+            </div>
+            <div class="input-row">
+                <textarea class="input-box" id="input" placeholder="כתוב כאן את השאלה שלך..." rows="2"></textarea>
+                <button class="send-btn" onclick="send()">▶</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
